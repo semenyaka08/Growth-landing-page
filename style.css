@@ -8,6 +8,7 @@
     --primary-color: #4891ff;
     --light-color: #dcdce0;
     --dark-color: #111;
+    --bright-color: #f0f0f3;
 }
 
 body{
@@ -104,7 +105,6 @@ img{
 /*Hero*/
 .hero{
     margin-bottom: 50px;
-    border: 2px solid red;
 }
 
 .hero .container{
@@ -166,6 +166,53 @@ img{
     gap: 20px;
 }
 
+/*Price*/
+.pricing .price-header{
+    margin-bottom: 30px;
+}
+
+.price-header h2{
+    margin-bottom: -20px;
+}
+
+.pricing .pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.pricing .card-header{
+    margin-bottom: 40px;
+}
+
+.pricing hr{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.pricing .options p{
+    margin-bottom: 15px;
+}
+
+.pricing i{
+    margin-right: 8px;
+}
+
+.btn-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pricing .bg-black .btn-section{
+    padding-top: 25px;
+}
+
+.pricing .container-sm p:last-child{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 /*Utility Classes*/
 
 .container{
@@ -210,7 +257,7 @@ img{
     margin: 20px 0 10px;
 }
 
-.text-md{
+.text-sm{
     font-size: 0.9rem;
     line-height: 1.4;
     font-weight: normal;
@@ -238,6 +285,11 @@ img{
     color: #333333;
 }
 
+.bg-bright{
+    background: var(--bright-color);
+    color: #333333;;
+}
+
 .bg-black{
     background: #000;
     color: #ffffff;
@@ -246,8 +298,16 @@ img{
 /*Cards*/
 
 .card{
-    background: #fff;
-    color: #000;
     border-radius: 10px;
     padding: 20px;
+}
+
+.testimonials .card{
+    background: #fff;
+    color: #000;
+}
+
+/*highlight*/
+.highlight{
+    font-size: 2rem;
 }
