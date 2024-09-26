@@ -19,6 +19,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #333;
 }
 
 ul{
@@ -78,6 +79,14 @@ img{
     transition: 0.5s;
 }
 
+#GetStarted{
+    margin-right: 10px;
+}
+
+#Book{
+    margin-left: 10px;
+}
+
 .btn:hover{
     opacity: 0.8;
 }
@@ -95,13 +104,14 @@ img{
 /*Hero*/
 .hero{
     margin-bottom: 50px;
+    border: 2px solid red;
 }
 
 .hero .container{
     background: url("images/hero-bg.png") no-repeat;
     background-size: contain;
     background-position: bottom;
-    height: 550px;
+    height: 600px;
 }
 
 .hero .hero-content{
@@ -110,10 +120,51 @@ img{
 
 .hero-text{
     width: 70%;
+    margin-bottom: 30px;
+    padding-top: 20px;
+
+}
+
+/*Video*/
+
+.video .container-sm h1{
+    color: white;
+}
+
+.video .container-sm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video .container-sm .video-content{
     margin-bottom: 20px;
 }
 
+/*Testimonials*/
 
+.testimonials .container{
+    padding-bottom: 40px;
+}
+
+.testimonials .card p:nth-child(2) {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.testimonials{
+    padding-top: 40px;
+}
+
+.testimonials-header{
+    padding-right: 35%;
+}
+
+.testimonials-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 
 /*Utility Classes*/
 
@@ -168,4 +219,35 @@ img{
 
 .text-center{
     text-align: center;
+}
+
+/*Background*/
+
+.bg-primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-dark{
+    background: var(--dark-color);
+    color: #ffffff;
+}
+
+.bg-light{
+    background: var(--light-color);
+    color: #333333;
+}
+
+.bg-black{
+    background: #000;
+    color: #ffffff;
+}
+
+/*Cards*/
+
+.card{
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
 }
