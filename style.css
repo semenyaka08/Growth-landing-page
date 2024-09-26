@@ -187,11 +187,11 @@ img{
 
 .pricing hr{
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .pricing .options p{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .pricing i{
@@ -205,7 +205,7 @@ img{
 }
 
 .pricing .bg-black .btn-section{
-    padding-top: 25px;
+    margin-top: 60px;
 }
 
 .pricing .container-sm p:last-child{
