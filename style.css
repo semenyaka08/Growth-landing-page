@@ -217,6 +217,75 @@ img{
     padding-bottom: 25px;
 }
 
+/*FAQ*/
+
+.faq .faq-header{
+    padding-top: 50px;
+}
+
+.faq-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq .faq-header ul{
+    display: flex;
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.faq-header ul li{
+    padding: 5px 20px;
+}
+
+.active{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.faq-header ul li a{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.faq-header ul .active a{
+    color: white;
+}
+
+.faq-content .content-group{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.faq-content .content-group .group-header{
+    padding: 20px 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.faq-content .content-group .group-header h3{
+    font-weight: 600;
+    width: 95%;
+}
+.faq-content .content-group .group-header i{
+    position: absolute;
+    right: 0;
+    top: 35px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.faq-content .content-group .group-body{
+    display: none;
+}
+
+.faq-content .content-group .group-body.open{
+    display: block;
+}
+
 /*Utility Classes*/
 
 .container{
